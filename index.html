@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Codejam by macduy</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Codejam</h1>
+        <p>Framework for codejam competitions</p>
+        <p class="view"><a href="https://github.com/macduy/codejam">View the Project on GitHub <small>macduy/codejam</small></a></p>
+        <ul>
+          <li><a href="https://github.com/macduy/codejam/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/macduy/codejam/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/macduy/codejam">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>What is it?</h3>
+
+<p><code>codejam</code> is a <strong>small, easy-to-use, Python framework</strong> for writing solutions to codejam competition problems. It takes the hassle out of writing code, so that you can concentrate on what is important: <strong>solving problems.</strong> </p>
+
+<p>If you use Python to solve codejam problems, this might be the right tool for you!</p>
+
+<h3>Show me!</h3>
+
+<p>The following is the <em>complete</em> solution to <a href="http://code.google.com/codejam/contest/975485/dashboard#s=p2">Qualification Round 2011, Problem B</a></p>
+
+<div class="highlight">
+<pre><span class="n">INPUT</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">'total'</span><span class="p">:</span> <span class="p">(</span><span class="s">'int'</span><span class="p">,</span> <span class="s">'constant'</span><span class="p">),</span>
+    <span class="s">'candies'</span><span class="p">:</span> <span class="p">(</span><span class="s">'int'</span><span class="p">,</span> <span class="s">'linearray'</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="n">INPUT_ORDER</span> <span class="o">=</span> <span class="p">[</span><span class="s">'total'</span><span class="p">,</span> <span class="s">'candies'</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">total</span><span class="p">,</span> <span class="n">candies</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">:</span> <span class="n">a</span><span class="o">^</span><span class="n">b</span><span class="p">,</span> <span class="n">candies</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s">"NO"</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">candies</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+        <span class="n">candies</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+        <span class="n">candies</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+        <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">candies</span><span class="p">)</span>
+</pre>
+</div>
+
+
+<h3>How do I use it?</h3>
+
+<p><em>To be written</em></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/macduy">macduy</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
